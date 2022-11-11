@@ -18,7 +18,7 @@ import java.util.Map;
 
 public class VolleyHttp {
 
-    static String TAG = VolleyHttp.class.getSimpleName();
+   public static String TAG = VolleyHttp.class.getSimpleName();
     public static boolean IS_TESTER = true;
     static String SERVER_DEVELOPMENT = "https://dummy.restapiexample.com/api/v1/";
     static String SERVER_PRODUCTION = "https://dummy.restapiexample.com/api/v1/";
@@ -42,8 +42,8 @@ public class VolleyHttp {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Logger.d(TAG, response);
-                        volleyHandler.onSucces(response);
+                        Logger.d(TAG, response.toString());
+                        volleyHandler.onSucces(response.toString());
                     }
                 },
                 new Response.ErrorListener() {
@@ -69,8 +69,8 @@ public class VolleyHttp {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Logger.d(TAG, response);
-                        volleyHandler.onSucces(response);
+                        Logger.d(TAG, response.toString());
+                        volleyHandler.onSucces(response.toString());
                     }
                 },
                 new Response.ErrorListener() {
@@ -96,8 +96,8 @@ public class VolleyHttp {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Logger.d(TAG, response);
-                        volleyHandler.onSucces(response);
+                        Logger.d(TAG, response.toString());
+                        volleyHandler.onSucces(response.toString());
                     }
 
                 },
@@ -123,8 +123,8 @@ public class VolleyHttp {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Logger.d(TAG, response);
-                        volleyHandler.onSucces(response);
+                        Logger.d(TAG, response.toString());
+                        volleyHandler.onSucces(response.toString());
                     }
                 },
                 new Response.ErrorListener() {
@@ -154,8 +154,8 @@ public class VolleyHttp {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Logger.d(TAG, response);
-                        volleyHandler.onSucces(response);
+                        Logger.d(TAG, response.toString());
+                        volleyHandler.onSucces(response.toString());
                     }
                 },
                 new Response.ErrorListener() {

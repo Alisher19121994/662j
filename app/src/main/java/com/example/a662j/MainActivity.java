@@ -23,10 +23,11 @@ public class MainActivity extends AppCompatActivity {
         Employee employeePOST = new Employee(1, "Alisherbek", 788000, 45, "");
         Employee employeePUT = new Employee(1, "Alisher Daminov", 922000, 45, "");
 
-        apiVolleyList();
-       // apiVolleyPost(employeePOST);
+        //apiVolleyList();
+        apiVolleySingle(employee);
+        //apiVolleyPost(employeePOST);
         // apiVolleyPut(employeePUT);
-        //apiVolleyDelete(employee);
+       // apiVolleyDelete(employee);
     }
 
     void apiVolleyList() {
